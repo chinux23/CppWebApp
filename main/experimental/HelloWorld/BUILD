@@ -1,4 +1,7 @@
+
+
 cc_binary(
-    name="helloworld",
+    name = "helloworld",
     srcs = ["helloworld.cc"],
+    deps = ["@boost//:asio"],
 )
