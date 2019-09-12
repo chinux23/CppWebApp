@@ -1,5 +1,6 @@
-cc_binary(
+cc_library(
     name = "cppnetlib",
-    srcs = glob(["*.h"])
+    hdrs = glob(["*.hpp"]),
+    srcs = glob(["*.cpp"]),
     deps = ["@boost//:asio"],
 )
