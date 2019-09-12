@@ -3,5 +3,7 @@
 cc_binary(
     name = "helloworld",
     srcs = ["helloworld.cc"],
-    deps = ["@boost//:asio"],
+    deps = ["@boost//:asio",
+	    "//thirdparty/boost:cppnetlib",
+	    ],
 )
