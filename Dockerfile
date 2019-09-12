@@ -29,6 +29,8 @@ RUN pip install cget
 RUN cget install pantor/inja@v2.1.0
 RUN cget install nlohmann/json@v3.1.0
 
+RUN apt install -y vim
+
 RUN apt-get clean 
 
 # ENTRYPOINT ["python3", "app.py"]
